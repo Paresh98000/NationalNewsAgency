@@ -1,0 +1,100 @@
+<style>
+	label{
+		font-family: Constantia;
+		font-size: 1.5em;
+	}
+
+	div.usr{
+		text-shadow: 3px 3px 3px lightgray;
+	}
+	
+	div.usr input{
+		font-family: Constantia;
+		letter-spacing: 1px;
+		font-size: 1.5em;
+		padding: 10px;
+	}
+
+	#btns,#btnr{
+		font-size:25px; width:200px; box-shadow: 3px 3px 3px gray;
+	}
+
+	td #btns:hover,#btnr:hover{
+		box-shadow: 0px 0px 3px gray;
+		color:blue;
+	}	
+
+	div.usr td{
+		font-family: Constantia;
+		letter-spacing: 1px;
+		font-size: 20px;
+	}	
+	
+</style>
+
+<div class="usr" align="center"  style="font-size: 3em; margin:auto; margin-right: 30%; padding-top:200px;">
+	User Registration
+</div>
+<div align="center" class="usr" style="   margin: auto;  height: 300px; margin-right: 30%; padding-top: 50px;">
+	<form method="post" style="">
+		<table>
+		<tr>
+		<td> <label > Name: </label> </td> <td> <input type="text" placehood="Full Name" required/> </td>
+		</tr>
+		<tr>
+		<td><label> Gender: </label> </td> <td> <input type="radio" name="gen" value="Male" checked/> Male <input type="radio" name="gen" value="Female" required/> Female</td>  </tr>
+		
+		<tr>
+		<td>
+		<label> Username:  &nbsp;</label></td> <td> <input type="text" placehood="User Name" required/> </td>
+		</tr>
+		
+		<tr>
+		<td>
+		<label> Password: &nbsp; </label> </td> <td> <input type="password" placehood="password" required/> </td>
+		</tr>
+		
+		<tr>
+		<td>
+		<label> Confirm Password: &nbsp; </label> </td> <td> <input type="password" placehood="password" required/> </td>
+		</tr>
+
+		<tr>
+		<td>
+		<label > Email-id: </label> 
+		</td>
+		<td>
+		<input type="e-mail" placeholder="abcsd123@hotmail.com" required/>
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
+		<label > Favorite:  </label>
+		</td>
+		<td>
+		<input type="checkbox" name="Fav-Sp" value="Sports" checked/> Sports
+		<input type="checkbox" name="Fav-Tr" value="Travell"/> Travell
+		<input type="checkbox" name="Fav-En" value="Entertainment"/> Entertainment
+		<input type="checkbox" name="Fav=Bu" value="Business"/> Business
+		<input type="checkbox" name="Fav-Re" value="Religius"/> Religius
+		</td>
+		</tr>
+		
+		<tr>
+		</tr>
+		
+		<tr>
+		<td>
+		<br />
+		<input style="" id="btns" type="submit" value="Sign In"/>
+		</td>
+		<td>
+		<br />
+		<input style="" id="btnr" type="reset" value="Reset"/>
+		</td>
+		</tr>
+		</table>
+
+	</form>
+</div>

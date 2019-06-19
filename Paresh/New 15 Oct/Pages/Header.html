@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<title>Natinal News Agency</title>
+		
+		<script>
+
+			var isHidden=true;
+		
+			function show(){
+				var a = document.getElementById("MenuList").style;
+			
+				if(isHidden){
+					isHidden=false;
+					a.display="block";
+					a.height="70%";
+					
+					a.width="300px";
+		
+				} else {
+					isHidden=true;
+					//a.display="none";
+					a.width="0";
+					a.height="0%";
+					//a.overflow = "hidden";
+				}
+
+				return 0;
+			}
+	
+	
+	
+		</script>
+
+		<link rel="stylesheet" id="linkh" href="./Stylesheets/header.css" />
+		<link rel="stylesheet" id="linkn" href="./Stylesheets/navigation.css" />
+
+
+	</head>
+
+	<body bgcolor="" onload="show();">
+
+		<span id="Current_Page" hidden>Home</span>	
+		<section class="main_Content" style=" margin: auto;">
+	
+	<header>
+
+		
+		<div class="txt">
+			<a href="../php/HomePage.php" style="text-decoration: none; font-weight: bold; font-family: 'Footlight MT';">
+					
+					<span id="red">
+						National
+					</span>
+					<span  id="blue"> 
+						News
+					</span>
+					<span id="purple"> 
+						Agency
+					</span>
+			</a>
+			
+		</div>
+
+		<div class="profile">
+			<img id="pro_img" src="../images/Logo.png">
+			<div>
+			<a id="a_login" href="../php/User_Sign.php"> Log In </a> &nbsp; | &nbsp;
+			<a id="a_regi" href="../php/User_Registration.php"> Register </a> 
+			</div>
+			
+		</div>
+
+	</header>
+
+	<div class="Hmenu">
+				
+		<div class="menu"  onClick="show();">
+			Menu <hr> <hr> <hr> 					
+		</div>
+
+		<div class="searcharea">
+			<form id="search" method="GET">
+				<input id="srchbox"type='text' />
+				<Button id="srchbtn" type="submit"> Search </button>
+			</form>
+		</div>	
+	</div>
+		
+	<div class="MenuList" id="MenuList">
+		<div id="txt_menu"> Menu </div>
+
+		<a href="../php/HomePage.php" style="margin-top: 20px;">		
+			<div class="pages" id="home" style="margin-top: 20px;" >
+			 	Home Page
+	 		</div>
+		</a> 
+
+		<a href="Entertainment.php">
+			<div class="pages" id="enter">
+				 Entertainment 
+			</div>
+		</a>
+
+		<a href="HomePage.php">
+			<div class="pages" id="busi">
+			 	Business 
+			</div>
+		</a>
+
+		<a href="HomePage.php">
+			<div class="pages" id="trav">
+			 	Traval 
+			</div>
+		</a>
+
+		<a href="HomePage.php">
+			<div class="pages" id="nantion">
+			 	National 
+			</div>
+		</a>
+
+		<a href="HomePage.php">
+			<div class="pages" id="sport">
+			 	Sports 
+			</div>
+		</a>
+
+		<a href="../php/User_Sign.php">
+			<div class="pages" id="poli">
+			 	Politics 
+			</div>
+		</a>
+
+		<a href="HomePage.php"> 
+			<div class="pages" id="abUs">
+				About Us
+			</div>
+		</a>
+
+		<a href="HomePage.php">
+			<div class="pages" id="ctUs">
+				Contact Us 
+			</div>
+		</a>
+
+		<hr color="lightgray"/>
+
+		<div id="txt_menu"> Quick Links </div>
+
+		<a href="HomePage.php">
+						
+			<a href="../php/User_Sign.php">
+				<div class="links" id="usr" style="margin-top: 20px;">
+					User Login
+				</div>
+			</a>
+
+			<!---<a href="#">
+				<div class="links">
+					Employee Login
+				</div>
+			</a>
+
+			<a href="#"> 
+				<div class="links">
+					Admin Login
+				</div>
+			</a>--->
+	
+	</div>
+
+
+			
+		</section>
+
+		
+	</body>
+</html>
+		

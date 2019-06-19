@@ -1,0 +1,450 @@
+<style>
+
+div.news{
+	float: left;
+	//position: relative;
+	//top: 200px;
+	//left: 150px;
+	//border: 1px solid gray;
+	//box-shadow: 3px 3px 3px gray;
+	//border-radius: 10px;
+	padding: 10px;
+	width: 98%;
+	height: 130px;
+	//white-space: nowrap;
+	//overflow: auto;
+	padding-bottom: 20px;
+	//text-overflow: ellipsis;
+	
+}
+
+div.news_con{
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 150px;
+	border: 1px solid gray;
+	box-shadow: 3px 3px 3px gray;
+	border-radius: 10px;
+	padding: 10px;
+	width: 60%;
+	height: 185px;
+	//white-space: nowrap;
+	overflow: hidden;
+	//text-overflow: ellipsis;
+	overflow:auto;
+}
+
+div.container{
+	position: relative;
+	//clear: left;
+	//float: left;
+	top: 3px;
+	//height: 10px;
+	//border: 1px solid black;
+	overflow:auto;
+}
+
+
+
+div.container img{
+	//position: relative;
+	float: left;	
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	//right: 10;	
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	font-family: 'Courier New';
+	border: 1px solid black;
+}
+
+div.title{
+	//height: 50px;
+	width: 60%;
+	//position: relative;
+	//top: 10px;
+	font-family: 'Century Gothic';
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 5px;
+	//white-space: nowrap;
+	//overflow: hidden;
+	//text-overflow: ellipsis;
+}
+
+div.desc{
+	height: 30px;
+	padding-bottom: 10px;
+	width: 60%;
+	//position: relative;
+	margin-top: 10px;
+	font-family: 'Century Gothic';
+	font-size: 20px;
+	//clear: left;
+	float: left;
+	//width: 75%;
+	//margin-left: -100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: '...';
+	
+}
+
+div.fulldesc{
+	//width: 88%;
+	//position: relative;
+	margin-top: 5px;
+	font-size: 20px;
+	font-family: 'Century Gothic';
+	clear: left;
+	float: left;
+	overflow: auto;
+	padding-bottom: 30px;
+}
+
+div.buttons{
+	position:absolute;	
+	bottom: 3px;
+	background: white;
+}
+
+.buttons span:hover{
+	cursor: pointer;
+	color: blue;
+}
+
+#lk.div{
+	color:black;
+}
+
+#lk:hover{
+	color: red;
+}
+/*div.comment{
+
+	
+	margin-left: 10px;
+	float:left;
+	
+	width: auto;
+	height: 99%;
+	border-left:1px solid black;
+	overflow-y:auto;
+}*/
+
+div.add{
+	
+	//float:left;
+	//border: 1px solid black;
+	position: relative;
+	top: 100px;
+	//margin-top: -350px;
+	//margin-left: 250px;'
+	//margin-top: 200px;
+	left: 230px;
+	//z-index:-5;
+	display:initial;
+	padding-bottom: 100px;
+	
+
+}
+
+div.add img{ 
+	width: 300px;
+	height:800;
+}
+
+
+* {box-sizing: border-box}
+/*body {font-family: Verdana, sans-serif; margin:0}*/
+.mySlides {display: none; padding-left: 150px;}
+.slideshow-container img{vertical-align: middle; height: 300px; border: 1px solid black;}
+
+/* Slideshow container */
+.slideshow-container {
+  	float: left;
+  	margin-top: 100px;
+  	//margin-left: 50px;
+  	width: 50%;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: relative;
+  top: -198px;
+  width: auto;
+  padding: 16px;
+  left: 150px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  cursor: pointer;
+  position: relative;
+  top: -198px;
+  width: auto;
+  padding: 16px;
+  left: 91%;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: relative;
+  display:initial;
+  background-color: white;
+  text-align: center;
+left: 30px;
+  top:-88px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background: white;
+  color: black;
+  font-size: 12px;
+  //padding: 8px 12px;
+  position: relative;
+  top: 40px;
+  float: left;
+  padding: 3px;
+  left: -30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  
+  //margin-top: 400px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+<script>
+
+	function description(){
+		tag = document.querySelector('div.desc');		
+		tag2 = document.querySelector('#viewmore');
+		tag3 = document.querySelector('div.news');
+		tag4 = document.querySelector('div.news_con');
+		tag5 = document.querySelector('div.fulldesc');
+		if(window.getComputedStyle(tag).whiteSpace == 'nowrap'){
+			tag.style.whiteSpace = 'normal';
+			tag.style.height='auto';
+			tag.style.overflow = 'auto';
+			tag.style.clear='left';
+			tag2.innerHTML = ' <font size="4"> &#8657; </font> View Less';
+			tag3.style.height = '230px';
+			tag4.style.height = "280px";
+			tag3.style.overflow = 'auto';
+			tag5.style.display = 'block';
+		} else{
+			tag.style.whiteSpace = 'nowrap';
+			tag.style.height='30px';
+			tag.style.clear='none';
+			tag2.innerHTML = ' <font size="4"> &#8659; </font> Read More';
+			tag3.style.height = '130px';
+			tag.style.overflow = 'hidden';
+			tag3.style.overflow = 'hidden';
+			tag4.style.height = "185px";
+			tag5.style.display = 'none';
+		}
+		//sty.whiteSpace="normal";
+	}
+
+</script>
+
+<div class="slideshow-container">
+
+<div style="text-align:center; float: left; padding-left: 150px; height: 25px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="../images/c.png" style="width:100%">
+  <div class="text">Basic Number conversion</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="../images/a.jpg" style="width:100%">
+  <div class="text">Computer Binary System Conversions</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../images/b.jpg" style="width:100%">
+  <div class="text">Basic number conversions</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+} 
+
+</script>
+
+
+<div class="news_con" >
+	<div class="from" style='float:left;'><i><b style="color:red;"> Headline + Breaking News</b> | Tags: Sports, Business, Company, Study </i></div>
+	<div class="from" style='float:right;'><i> Rajkot, Gujarat </i></div>
+<div class="news">
+	<div class="container">
+		
+		<img name="image" id="image" src="../images/Logo.png" />
+		<div class='title'> Nantional News Agency will be india's largest News company </div>
+		<div class='desc'>
+		This is the company was created by two boys who are studing in marwdi college of rajkot, the just desided to develope their project in News field then the idea of NNA is appears.
+		</div>
+		<div class='fulldesc' style='clear: left; display:none;'>
+		This is the company was created by two boys who are studing in marwdi college of rajkot, the just desided to develope their project in News field then the idea of NNA is appears.
+		</div>
+	</div>
+		
+	<div class="buttons" style='clear: left; width: 95%;'>
+		
+		<div style="float:left; "><span id="viewmore" style='' onclick="description();"> &#8659;  Read more </span></div>
+		<div style="float:right;  "><span id="cmnd" style='clear:left; float: right;'> See all Comments  </span> </div>
+		<div style="float:right;  "><span id="lk"  style=' clear:left; float: right; padding-right: 30px;'> &hearts; Like </span> </div>
+	</div>
+
+</div>
+
+
+<!--- <div class='comment' style='padding-left: 5px;'>
+	
+		<form>
+		<table>
+			<tr>
+				<th>  Comments </th>
+			</tr>	
+
+			<tr>
+				<td style="padding: 5px; ">
+					<textarea style="border-radius: 3px; padding: 3px; height: 100px;" placeholder='enter your comments'></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td style='display:initial; float:right;'>
+					<a>
+						<img id="image_p" width='30px' style="" height='30px' src="../images/user-icon.jpg"> 
+					</a>
+
+				</td>
+				
+				<td id="user_name" style='float:right;'>
+					<p style='font-size: 8px; color: darkgray; font-weight: bold; '> From </p>
+			 	 	User Name
+
+				</td>
+			</tr>
+			<tr>
+				<td style=''>
+					<input type='submit' value='Save' />
+				</td>
+			</tr>
+		</table>
+		</form>
+	</div>---!>
+</div>
+<div class="add">
+	<img id="add_img" src='../images/c.png' />
+</div>
